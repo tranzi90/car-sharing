@@ -52,7 +52,7 @@ CREATE TABLE `user` (
   `contact_email` bit(1) NOT NULL DEFAULT b'0',
   `contact_phone` bit(1) NOT NULL DEFAULT b'0',
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
